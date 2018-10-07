@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/eseom/react-native-furi/issues"
   },
-  "homepage": "https://github.com/eseom/react-native-furi/readme",
+  "homepage": "https://github.com/eseom/react-native-furi/",
   "devDependencies": {
     "@types/react": "^16.4.15",
     "@types/react-native": "^0.57.2",

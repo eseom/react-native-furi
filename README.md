@@ -39,3 +39,7 @@ import Furi from 'react-native-furi'
     size={13}
   />
 ```
+
+## android App
+
+https://play.google.com/store/apps/details?id=org.eseom.ikoitiniti
