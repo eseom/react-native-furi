@@ -34,7 +34,7 @@ class FuriWord extends React.Component<FuriWordProps, FuriWordState> {
         <View style={[{}, this.props.style]}>
           <Text style={[{ fontSize: furiSize, textAlign: 'center' }, this.props.furiStyle, (!this.props.showFuri ? { opacity: 0 } : {})]}>{this.props.furi ? this.props.furi : ' '}</Text>
           <View style={{ borderColor: 'red', borderWidth: 0, flexDirection: 'row', justifyContent: value.length > 1 ? 'space-between' : 'center' }}>
-            {value.split('').map((item, index) => (
+            {[...value].map((item, index) => (
               <Text key={index} style={[{ fontSize: size }, this.props.valueStyle]}>{item}</Text>
             ))}
           </View>
@@ -72,7 +72,7 @@ export default class Furi extends React.PureComponent<FuriProps, FuriState> {
       if (item.furi)
         nv.push(item)
       else
-        item.value.split('').forEach((item2) => {
+        [...item.value].forEach((item2) => {
           nv.push({ value: item2, furi: '' })
         })
     })
